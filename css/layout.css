@@ -38,14 +38,25 @@ body {
     scroll-behavior: smooth;
 }
 
-html {
+/* Adjustment */
+/* html {
     height: -webkit-fill-available;
 }
-
 body {
-    height: -webkit-fill-available;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
-
 .book {
     height: -webkit-fill-available;
+} */
+
+@media (pointer:none), (pointer:coarse) {
+    body {
+        background-color: aqua;
+    }
+}
+@media (pointer:fine) {
+    body {
+        background-color: green;
+    }
 }

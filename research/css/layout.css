@@ -48,14 +48,13 @@ h1 {
     color: red;
 }
 
+/* Adjustment */
 html {
     height: -webkit-fill-available;
 }
-
 body {
     height: -webkit-fill-available;
 }
-
 .book {
     height: -webkit-fill-available;
 }
