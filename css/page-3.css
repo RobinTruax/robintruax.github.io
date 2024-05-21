@@ -32,11 +32,14 @@
 
 /* Main Text */
 #main3 {
-    padding-bottom: 4vh;
+    padding-bottom: 3vh;
 }
 
 /* Footnote */
 #footnote3 {
+    /* Font Size */
+    font-size: clamp(1.5vh, 1.2vw, 1.8vh);
+
     /* Layout */
     padding-top: 1vh;
     width: 95%;

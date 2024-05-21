@@ -48,17 +48,14 @@ h1 {
     color: red;
 }
 
-/* Mobile Correction */
-@media (pointer:none), (pointer:coarse) {
-    html {
-        height: -webkit-fill-available;
-    }
+html {
+    height: -webkit-fill-available;
+}
 
-    body {
-        height: -webkit-fill-available;
-    }
+body {
+    height: -webkit-fill-available;
+}
 
-    .book {
-        height: -webkit-fill-available;
-    }
+.book {
+    height: -webkit-fill-available;
 }
