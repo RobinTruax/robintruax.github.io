@@ -1,0 +1,27 @@
+/* Padding */
+#p2 {
+    padding: 12vw 8vw 10vw 8vw;
+}
+
+/* Text */
+#p2 > .internal > .text {
+    width: 67.5%;
+}
+
+/* Image Container */
+#p2 > .internal > .image {
+    width: 30%;
+    margin: auto;
+}
+
+/* Image */
+#im2 {
+    max-height: 90%;
+    position: absolute;
+    bottom: 4vh;
+}
+
+/* Content */
+#p2 > .internal > .text > .content {
+    bottom: 6vh;
+}

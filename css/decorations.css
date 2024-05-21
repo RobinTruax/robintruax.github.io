@@ -1,0 +1,43 @@
+/* Dividers */
+.divider {
+    /* Sizing */
+    height: 75vh;
+    width: 120%;
+
+    /* Layout */
+    position: absolute;
+    top: 110%;
+    left: -10%;
+
+    /* Rotation */
+    transform: rotate(-5deg);
+}
+
+/* Divider Colors */
+#d1 {
+    background-color: black;
+}
+#d2 {
+    background-color: red;
+}
+
+/* Remove Default Scrollbar */
+.book::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Insert Custom Scrollbar */
+#scrollbar {
+    /* Sizing */
+    height: 33.3vh;
+    width: 7px;
+
+    /* Layout */
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    /* Visual */
+    background-color: black;
+    border-radius: 0px;
+}

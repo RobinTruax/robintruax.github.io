@@ -1,7 +1,9 @@
+/* Entry */
 .entry {
     font-weight: 300;
 }
 
+/* Grid Layout For Two */
 .two {
     display: grid;
     grid-template-rows: 1fr;
@@ -11,6 +13,7 @@
     row-gap: 10px;
 }
 
+/* Grid Layout for One */
 .one {
     display: grid;
     grid-template-rows: 1fr;
@@ -20,15 +23,14 @@
     row-gap: 10px;
 }
 
+/* Grid Area Labelling */
 .text {
     grid-area: text;
 }
 
-.button {
-    margin-left: 10px;
-}
-
+/* Mobile */
 @media only screen and (max-width: 125vh) {
+    /* Mobile Grid Layout for Two */
     .two {
         display: grid;
         grid-template-rows: 1fr 5vh;
@@ -40,6 +42,7 @@
         column-gap: 10px;
     }
     
+    /* Mobile Grid Layout for One */
     .one {
         display: grid;
         grid-template-rows: 1fr 5vh;
@@ -50,49 +53,4 @@
         row-gap: 10px;
         column-gap: 10px;
     }
-
-    .button {
-        margin-left: 0px;
-    }
 }
-
-.button {
-    border: 1px solid lightgrey;
-    border-radius: 8px;
-    color: #666;
-
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-
-    font-family: 'Assistant';
-    font-weight: 400;
-    letter-spacing: 0.08vw;
-
-    transition: all ease-in-out 0.4s;
-
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-
-.button:hover {
-    color: #000;
-    border: 1px solid black;
-    cursor: pointer;
-    text-shadow:
-        -0.05px -0.05px 0 #000,
-        0.05px -0.05px 0 #000,
-        -0.05px 0.05px 0 #000,
-        0.05px 0.05px 0 #000;
-}
-
-/* 
-.wide {
-    width: 26%;
-} */

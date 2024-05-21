@@ -1,0 +1,54 @@
+/* * */
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    /* Sizing */
+    overflow: hidden;
+    height: 100vh;
+
+    /* Animation */
+    animation: fadeInAnimation ease-in 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;  
+}
+
+/* Fade In Animation */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Book */
+.book {
+    /* Sizing */
+    height: 100vh;
+
+    /* Scrolling */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Mobile Correction */
+@media (pointer:none), (pointer:coarse) {
+    html {
+        height: -webkit-fill-available;
+    }
+
+    body {
+        height: -webkit-fill-available;
+    }
+
+    .book {
+        height: -webkit-fill-available;
+    }
+}

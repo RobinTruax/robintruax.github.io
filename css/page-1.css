@@ -1,0 +1,38 @@
+/* Padding */
+#p1 {
+    padding: 16vw 8vw 10vw 8vw;
+}
+
+/* Text */
+#p1 > .internal > .text {
+    width: 55%;
+}
+
+/* Image Container */
+#p1 > .internal > .image {
+    width: 42.5%;
+}
+
+/* Image */
+#im1 {
+    /* Position */
+    max-height: 100%;
+    position: absolute;
+    bottom: 4vh;
+}
+
+/* Main Text */
+#main1 {
+    padding-bottom: 4vh;
+}
+
+/* Footnote */
+#footnote1 {
+    /* Layout */
+    padding-top: 1vh;
+    width: 95%;
+
+    /* Line */
+    border-top-style: solid;    
+    border-width: 1.5px;
+}

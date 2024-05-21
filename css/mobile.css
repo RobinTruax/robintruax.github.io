@@ -1,0 +1,63 @@
+@media only screen and (max-width: 125vh) {
+    /* Padding */
+    #p1,#p2,#p3 {
+        padding: 12vw 8vw;
+    }
+
+    /* Universal */
+    .internal {
+        flex-direction: column;
+    }    
+    .separator {
+        width: 100%;
+        height: 0%;
+    }    
+    
+    /* Page 1 */
+    #p1 > .internal > .image {
+        width: 100%;
+        height: 65%;
+    }
+    #p1 > .internal > .text {
+        width: 100%;
+        height: 35%;
+    } 
+
+    /* Page 2 Edits */
+    #p2 > .internal > .image {
+        width: 100%;
+        height: 45%;
+    }
+    #p2 > .internal > .text {
+        width: 100%;
+        height: 55%;
+        margin-bottom: 1.5vh;
+    }
+    #p2 > .internal > .text > .content {
+        bottom: 1vh;
+    }
+    #im2 {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+    }
+
+    /* Page 3 */
+    #p3 > .internal > .vertseparator {
+        height: 17.5%;
+    }
+    #p3 > .internal > .text {
+        width: 100%;
+        height: 45%;
+        bottom: 0;
+    }
+    #p3 > .internal > .image {
+        width: 100%;
+        height: 35%;
+        padding-bottom: 2vh;
+    }
+}

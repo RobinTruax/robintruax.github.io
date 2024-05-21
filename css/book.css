@@ -1,0 +1,58 @@
+/* Pages */
+.page {
+    /* Sizing */
+    height: 100%;
+
+    /* Scrolling */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/* Internal */
+.internal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: beige; */
+}
+
+/* Image */
+.image {
+    /* Sizing */
+    height: 100%;
+    position: relative;
+    /* background-color: bisque; */
+}
+
+/* Separator */
+.separator {
+    /* Sizing */
+    width: 2.5%;
+    height: 100%;
+    position: relative;
+}
+
+/* Text */
+.text {
+    /* Sizing */
+    height: 100%;
+    position: relative;
+    /* background-color: tan; */
+
+    /* Font */
+    font-family: 'Assistant';
+    font-weight: 300;
+    font-size: clamp(1.8vh, 1.2vw, 2.1vh);
+    letter-spacing: 0.12vh;
+}
+
+/* Content */
+.content {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Bolding */
+b {
+    font-weight: 500;
+}
