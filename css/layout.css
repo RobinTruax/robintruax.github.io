@@ -38,20 +38,15 @@ body {
 }
 
 /* Sizing */
-/* Desktop */
-@media (pointer:fine) {
-    body {
-        height: 100vh;
-    }
-}
 /* Mobile */
 html {
     height: -webkit-fill-available;
 }
 body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: -webkit-fill-available;
 }
 .book {
+    height: 100vh;
     height: -webkit-fill-available;
 }
