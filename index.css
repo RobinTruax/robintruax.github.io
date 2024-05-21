@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.book {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.book::-webkit-scrollbar {
+    width: 0px;
+}
+
+#p1 {
+    background-color: lightpink;
+}
+
+#p2 {
+    background-color: lightcyan;
+}
+
+#p3 {
+    background-color: lightgreen;
+}
