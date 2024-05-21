@@ -6,7 +6,7 @@
 }
 
 html {
-    height: -webkit-fill-available
+    height: -webkit-fill-available;
 }
 
 /* Body */
@@ -35,7 +35,7 @@ body {
 /* Book */
 .book {
     /* Sizing */
-    height: -webkit-fill-available;
+    height: 100%;
     position: absolute;
 
     /* Scrolling */
