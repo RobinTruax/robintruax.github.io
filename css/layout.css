@@ -9,7 +9,6 @@
 body {
     /* Sizing */
     overflow: hidden;
-    height: 100vh;
 
     /* Animation */
     animation: fadeInAnimation ease-in 2s;
@@ -38,8 +37,15 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Adjustment */
-/* html {
+/* Sizing */
+/* Desktop */
+@media (pointer:fine) {
+    body {
+        height: 100vh;
+    }
+}
+/* Mobile */
+html {
     height: -webkit-fill-available;
 }
 body {
@@ -48,15 +54,4 @@ body {
 }
 .book {
     height: -webkit-fill-available;
-} */
-
-@media (pointer:none), (pointer:coarse) {
-    body {
-        background-color: aqua;
-    }
-}
-@media (pointer:fine) {
-    body {
-        background-color: green;
-    }
 }
