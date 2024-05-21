@@ -5,11 +5,15 @@
     padding: 0;
 }
 
+html {
+    height: -webkit-fill-available
+}
+
 /* Body */
 body {
     /* Sizing */
     overflow: hidden;
-    height: 100%;
+    height: -webkit-fill-available;
 
     /* Animation */
     animation: fadeInAnimation ease-in 2s;
@@ -30,7 +34,7 @@ body {
 /* Book */
 .book {
     /* Sizing */
-    height: 100%;
+    height: -webkit-fill-available;
     position: absolute;
 
     /* Scrolling */
