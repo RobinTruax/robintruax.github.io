@@ -9,7 +9,7 @@
 body {
     /* Sizing */
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
 
     /* Animation */
     animation: fadeInAnimation ease-in 2s;
@@ -30,7 +30,8 @@ body {
 /* Book */
 .book {
     /* Sizing */
-    height: 100vh;
+    height: 100%;
+    position: absolute;
 
     /* Scrolling */
     overflow-y: scroll;
