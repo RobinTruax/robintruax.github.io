@@ -9,6 +9,7 @@
 body {
     /* Sizing */
     overflow: hidden;
+    height: 100vh;
 
     /* Animation */
     animation: fadeInAnimation ease-in 2s;
@@ -35,13 +36,4 @@ body {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-}
-
-/* Sizing */
-/* Mobile */
-body {
-    height: 90vh;
-}
-.book {
-    height: 90vh;
 }
