@@ -1,0 +1,71 @@
+/* Default Padding */
+.page {
+    padding: 10vw;
+}
+
+/* .page {
+    background-size: 12vw 12vw;
+    background-image:
+      linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  } */
+  
+/* Internal */
+.internal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: palegreen; */
+}
+
+/* Image */
+.image {
+    width: 42.5%;
+    height: 100%;
+    position: relative;
+    /* background-color: lightblue; */
+}
+
+/* Separator */
+.separator {
+    width: 2.5%;
+    height: 100%;
+}
+
+/* Text */
+.text {
+    width: 55%;
+    height: 100%;
+    position: relative;
+
+    font-family: 'Assistant';
+    font-weight: 300;
+    font-size: clamp(1.8vh, 1.2vw, 2.1vh);
+    letter-spacing: 0.12vh;
+    /* background-color: lightcoral; */
+}
+
+/* Content */
+.content {
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width: 125vh) {
+    .internal {
+        flex-direction: column;
+    }
+    .image {
+        width: 100%;
+        height: 65%;
+    }
+    .separator {
+        width: 100%;
+        height: 0%;
+    }
+    .text {
+        width: 100%;
+        height: 35%;
+    }
+}

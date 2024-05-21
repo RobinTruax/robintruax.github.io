@@ -1,0 +1,98 @@
+.entry {
+    font-weight: 300;
+}
+
+.two {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 6fr 1fr 1fr;
+    grid-template-areas: 
+        "text" "button1" "button2";
+    row-gap: 10px;
+}
+
+.one {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 6fr 2fr;
+    grid-template-areas: 
+        "text" "button1" "button2";
+    row-gap: 10px;
+}
+
+.text {
+    grid-area: text;
+}
+
+.button {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 125vh) {
+    .two {
+        display: grid;
+        grid-template-rows: 1fr 5vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "text text"
+            "button1 button2";
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
+    .one {
+        display: grid;
+        grid-template-rows: 1fr 5vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "text text"
+            "button button";
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .button {
+        margin-left: 0px;
+    }
+}
+
+.button {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    color: #666;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    font-family: 'Assistant';
+    font-weight: 400;
+    letter-spacing: 0.08vw;
+
+    transition: all ease-in-out 0.4s;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    color: #000;
+    border: 1px solid black;
+    cursor: pointer;
+    text-shadow:
+        -0.05px -0.05px 0 #000,
+        0.05px -0.05px 0 #000,
+        -0.05px 0.05px 0 #000,
+        0.05px 0.05px 0 #000;
+}
+
+/* 
+.wide {
+    width: 26%;
+} */
