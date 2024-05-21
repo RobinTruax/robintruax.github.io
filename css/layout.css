@@ -6,15 +6,13 @@
 }
 
 html {
-    height: -webkit-fill-available;
 }
 
 /* Body */
 body {
     /* Sizing */
     overflow: hidden;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100%;
 
     /* Animation */
     animation: fadeInAnimation ease-in 2s;
