@@ -46,6 +46,7 @@ body {
 
     body {
         height: -webkit-fill-available;
+        background-color: aqua;
     }
 
     .book {
