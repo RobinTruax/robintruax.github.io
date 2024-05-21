@@ -19,9 +19,6 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 .page {
