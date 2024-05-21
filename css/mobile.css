@@ -1,7 +1,16 @@
 @media only screen and (max-width: 125vh) {
     /* Padding */
     #p1,#p2,#p3 {
-        padding: 12vw 8vw;
+        padding: 12% 8%;
+    }
+    #p1 {
+        background-color: lightpink;
+    }
+    #p2 {
+        background-color: lightcyan;
+    }
+    #p3 {
+        background-color: lightgreen;
     }
 
     /* Universal */
