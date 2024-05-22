@@ -19,6 +19,6 @@ scrollbar = document.querySelector("#scrollbar");
 book.addEventListener("scroll", () => {
     setTimeout(function(){
         alert(book.scrollTop.toString() + "    " + book.scrollHeight.toString() + "    " + window.innerHeight.toString());
-    }, 2000);
+    }, 15000);
     scrollbar.style.top = (100*book.scrollTop/book.scrollHeight).toString() + "%";
 });
