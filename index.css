@@ -55,6 +55,7 @@ body {
 #scrollbar {
     /* Sizing */
     height: 33.3vh;
+    height: calc(var(--vh, 1vh) * 33.3);
     width: 6px;
 
     /* Layout */
