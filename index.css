@@ -29,6 +29,10 @@ body {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100%;
+
+    /* Scrolling */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .book::-webkit-scrollbar{
@@ -45,4 +49,20 @@ body {
 
 #p3 {
     background-color: lightgray;
+}
+
+/* Insert Custom Scrollbar */
+#scrollbar {
+    /* Sizing */
+    height: 33.3vh;
+    width: 6px;
+
+    /* Layout */
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    /* Visual */
+    background-color: black;
+    border-radius: 1px;
 }
