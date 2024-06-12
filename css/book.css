@@ -37,3 +37,13 @@
 #more {
     background-color: lightsteelblue;
 }
+
+@media only screen and (max-width: 125vh) {
+    .book{
+        scroll-snap-type: y mandatory;
+    }
+    .page {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+}
