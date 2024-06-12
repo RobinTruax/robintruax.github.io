@@ -1,17 +1,23 @@
 // Custom Variable for Height
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+d1 = document.querySelector("#d1");
+d2 = document.querySelector("#d2");
 
 // Update on Resize
 window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    d1.style.bottom = "0";
+    d2.style.bottom = "0";
 });
 
 // Update on Movement
 window.addEventListener('touchmove', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    d1.style.bottom = "0";
+    d2.style.bottom = "0";
 });
 
 // Constants
