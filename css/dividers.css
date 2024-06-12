@@ -8,6 +8,7 @@
     /* Layout */
     position: absolute;
     bottom: 0;
+    bottom: calc(var(--vh, 1vh) * 0);
 }
 
 /* Colors */

@@ -8,16 +8,12 @@ d2 = document.querySelector("#d2");
 window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    d1.style.bottom = "0";
-    d2.style.bottom = "0";
 });
 
 // Update on Movement
 window.addEventListener('touchmove', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    d1.style.bottom = "0";
-    d2.style.bottom = "0";
 });
 
 // Constants
