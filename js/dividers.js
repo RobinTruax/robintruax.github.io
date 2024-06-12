@@ -4,7 +4,7 @@ d1 = document.querySelector("#d1");
 d2 = document.querySelector("#d2");
 
 offset = 12.5*window.innerWidth/window.innerHeight;
-height = 65;
+height = 70;
 
 // Progress
 function progress(start){
@@ -40,18 +40,40 @@ book.addEventListener("scroll", () => {
     d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -105);
 });
 
+// Snap Target
+function snaptarget(start, end){
+    wh = window.innerHeight;
+    if(end > start){
+        if(end > start + wh*0.3){
+            return Math.ceil(end/wh)*wh;
+        } else {
+            return Math.floor(end/wh)*wh;
+        }
+    } else {
+        if(end < start - wh*0.3){
+            return Math.floor(end/wh)*wh;
+        } else {
+            return Math.ceil(end/wh)*wh;
+        }
+    }
+}
+
 // Scroll Snap
-// var scrollTimer = -1;
-
-// function bodyScroll() {
-//   document.body.style.backgroundColor = "white";
-
-//   if (scrollTimer != -1)
-//     clearTimeout(scrollTimer);
-
-//   scrollTimer = window.setTimeout("scrollFinished()", 500);
-// }
-
-// function scrollFinished() {
-//   document.body.style.backgroundColor = "red";
-// }
+var timer = null;
+var scrollstart = -1;
+book.addEventListener('scroll', function() {
+    if(scrollstart == -1){
+        scrollstart = book.scrollTop;
+    }
+    if(timer !== null) {
+        clearTimeout(timer);        
+    }
+    timer = setTimeout(function() {
+        book.scrollTo({
+            top: snaptarget(scrollstart, book.scrollTop),
+            left: 100,
+            behavior: "smooth",
+        });
+        scrollstart = -1;
+    }, 100);
+}, false);
