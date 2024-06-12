@@ -39,3 +39,19 @@ book.addEventListener("scroll", () => {
     d1.style.clipPath = polyprogress(0, 110, -110);
     d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -105);
 });
+
+// Scroll Snap
+// var scrollTimer = -1;
+
+// function bodyScroll() {
+//   document.body.style.backgroundColor = "white";
+
+//   if (scrollTimer != -1)
+//     clearTimeout(scrollTimer);
+
+//   scrollTimer = window.setTimeout("scrollFinished()", 500);
+// }
+
+// function scrollFinished() {
+//   document.body.style.backgroundColor = "red";
+// }
