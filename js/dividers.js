@@ -3,6 +3,9 @@ book = document.querySelector(".book");
 d1 = document.querySelector("#d1");
 d2 = document.querySelector("#d2");
 
+offset = 30;
+height = 65;
+
 // Progress
 function progress(start){
     current = book.scrollTop % window.innerHeight;
@@ -19,27 +22,20 @@ function bezier(t, initial, p1, p2, final) {
     );
 }
 
+// Get Polygon
+function polyprogress(p, b, e){
+    prog = progress(p);
+    bez = bezier(prog, b, 0, 0, e);
+    return `polygon(0% ${bez+offset}%, 0% ${bez+offset+height}%, 100% ${bez+height}%, 100% ${bez}%)`;
+}
+
+// Initialize
+d1.style.clipPath = polyprogress(0, 110, -95);
+d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -95);
+
 // Animation
 book.addEventListener("scroll", () => {
     // Progress
-    progress1 = bezier(progress(0), 110, 0, 0, -85);
-    progress2 = bezier(progress(0.3*window.innerHeight), 115, 0, 0, -85);
-
-    // Core
-    d1.style.top = progress1.toString() + "%";
-    d2.style.top = progress2.toString() + "%";
-
-    // Flicker Protection (Divider 1)
-    if(progress1 < -80){
-        d1.style.opacity = "0";
-    } else if(progress1 > 105) {
-        d1.style.opacity = "1";
-    }
-
-    // Flicker Protection (Divider 2)
-    if(progress2 < -80){
-        d2.style.opacity = "0";
-    } else if(progress2 > 105) {
-        d2.style.opacity = "1";
-    }
+    d1.style.clipPath = polyprogress(0, 110, -95);
+    d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -95);
 });
