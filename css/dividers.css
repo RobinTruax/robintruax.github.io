@@ -13,20 +13,20 @@
 /* Colors */
 #d1 {
     background-color: black;
-    clip-path: polygon(
+    /* clip-path: polygon(
         0% 70%,
         0% 90%,
         100% 75%,
         100% 55%
-    );
+    ); */
 }
 
 #d2 {
     background-color: red;
-    clip-path: polygon(
+    /* clip-path: polygon(
         0% 90%,
         0% 110%,
         100% 95%,
         100% 75%
-    );
+    ); */
 }
