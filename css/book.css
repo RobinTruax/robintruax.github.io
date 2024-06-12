@@ -1,0 +1,39 @@
+/* Book */
+.book {
+    /* Layout */
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    position: absolute;
+
+    /* Scrolling */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Page */
+.page {
+    /* Layout */
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+
+    /* Scrolling */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    contain: layout;
+}
+
+#intro {
+    background-color: lightblue;
+}
+
+#interests {
+    background-color: lightcyan;
+}
+
+#more {
+    background-color: lightsteelblue;
+}
