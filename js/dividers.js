@@ -3,7 +3,7 @@ book = document.querySelector(".book");
 d1 = document.querySelector("#d1");
 d2 = document.querySelector("#d2");
 
-offset = 17.5;
+offset = 12.5*window.innerWidth/window.innerHeight;
 height = 65;
 
 // Progress
