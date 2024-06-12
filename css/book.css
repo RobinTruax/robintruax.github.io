@@ -9,7 +9,7 @@
     /* Scrolling */
     overflow-y: scroll;
     overflow-x: hidden;
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -21,8 +21,8 @@
     width: 100%;
 
     /* Scrolling */
-    /* scroll-snap-align: start;
-    scroll-snap-stop: always; */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     contain: layout;
 }
 
@@ -36,14 +36,4 @@
 
 #more {
     background-color: lightsteelblue;
-}
-
-@media only screen and (max-width: 125vh) {
-    .book{
-        scroll-snap-type: y mandatory;
-    }
-    .page {
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
 }
