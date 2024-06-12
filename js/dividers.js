@@ -3,7 +3,7 @@ book = document.querySelector(".book");
 d1 = document.querySelector("#d1");
 d2 = document.querySelector("#d2");
 
-offset = 30;
+offset = 17.5;
 height = 65;
 
 // Progress
@@ -30,12 +30,12 @@ function polyprogress(p, b, e){
 }
 
 // Initialize
-d1.style.clipPath = polyprogress(0, 110, -95);
-d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -95);
+d1.style.clipPath = polyprogress(0, 110, -110);
+d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -105);
 
 // Animation
 book.addEventListener("scroll", () => {
     // Progress
-    d1.style.clipPath = polyprogress(0, 110, -95);
-    d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -95);
+    d1.style.clipPath = polyprogress(0, 110, -110);
+    d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -105);
 });
