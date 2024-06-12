@@ -7,8 +7,8 @@
 
     /* Layout */
     position: absolute;
-    bottom: 0;
-    bottom: calc(var(--vh, 1vh) * 0);
+    top: 0;
+    /* top: calc(var(--vh, 1vh) * 50); */
 }
 
 /* Colors */
