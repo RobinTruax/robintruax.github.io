@@ -2,11 +2,13 @@
 .divider {
     /* Size */
     height: 75vh;
+    height: calc(var(--vh, 1vh) * 75);
     width: 120%;
 
     /* Layout */
     position: absolute;
-    top: 110%;
+    top: 110vh;
+    top: calc(var(--vh, 1vh) * 110);
     left: -10%;
     transform: rotate(-5deg);
 }
