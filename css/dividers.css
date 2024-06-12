@@ -1,0 +1,21 @@
+/* Dividers */
+.divider {
+    /* Size */
+    height: 75vh;
+    width: 120%;
+
+    /* Layout */
+    position: absolute;
+    top: 110%;
+    left: -10%;
+    transform: rotate(-5deg);
+}
+
+/* Colors */
+#d1 {
+    background-color: black;
+}
+
+#d2 {
+    background-color: red;
+}
