@@ -44,21 +44,21 @@ book.addEventListener("scroll", () => {
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 if(isMobile){
-    alert("mobile");
+    // alert("mobile");
     book.scrollSnapType = "y mandatory"
 } else {
-    alert("not mobile");
+    // alert("not mobile");
     // Snap Target
     function snaptarget(start, end){
         wh = window.innerHeight;
         if(end > start){
-            if(end > start + wh*0.4){
+            if(end > start + wh*0.2){
                 return Math.ceil(end/wh)*wh;
             } else {
                 return Math.floor(end/wh)*wh;
             }
         } else {
-            if(end < start - wh*0.4){
+            if(end < start - wh*0.2){
                 return Math.floor(end/wh)*wh;
             } else {
                 return Math.ceil(end/wh)*wh;
