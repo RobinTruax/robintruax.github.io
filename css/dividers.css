@@ -1,4 +1,3 @@
-/* Dividers */
 .divider {
     /* Size */
     height: 100vh;
@@ -11,10 +10,8 @@
     pointer-events: none;
 }
 
-/* Colors */
 #d1 {
     background-color: black;
-
 }
 
 #d2 {
