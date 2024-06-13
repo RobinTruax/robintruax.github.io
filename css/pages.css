@@ -10,12 +10,14 @@
     width: 100%;
     height: 100%;
     display: flex;
+    background-color: bisque;
 }
 
 /* Image */
 .image {
     height: 100%;
     position: relative;
+    background-color: tan;
 }
 
 /* Separator */
@@ -33,6 +35,7 @@
     font-weight: 300;
     font-size: clamp(1.8vh, 1.2vw, 2.1vh);
     letter-spacing: 0.12vh;
+    background-color: beige;
 }
 
 /* Content */
