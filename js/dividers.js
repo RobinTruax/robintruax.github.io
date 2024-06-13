@@ -52,13 +52,13 @@ if(isMobile){
     function snaptarget(start, end){
         wh = window.innerHeight;
         if(end > start){
-            if(end > start + wh*0.2){
+            if(end > start + wh*0.4){
                 return Math.ceil(end/wh)*wh;
             } else {
                 return Math.floor(end/wh)*wh;
             }
         } else {
-            if(end < start - wh*0.2){
+            if(end < start - wh*0.4){
                 return Math.floor(end/wh)*wh;
             } else {
                 return Math.ceil(end/wh)*wh;
