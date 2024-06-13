@@ -86,12 +86,12 @@
     }
 
     #more > .internal > .vertseparator {
-        height: 7.5%;
+        height: 0%;
     }
 
     #more > .internal > .text {
         width: 100%;
-        height: 55%;
+        height: 60%;
         bottom: 0;
     }
 
