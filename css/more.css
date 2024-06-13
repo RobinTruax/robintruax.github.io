@@ -92,7 +92,11 @@
     }
 
     #more > .internal > .vertseparator {
-        height: 15%;
+        height: 7.5%;
+    }
+
+    #more > .internal > .separator {
+        height: 7.5%;
     }
 
     #more > .internal > .text {
