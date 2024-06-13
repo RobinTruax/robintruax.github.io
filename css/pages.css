@@ -16,7 +16,6 @@
 .image {
     height: 100%;
     position: relative;
-    background-color: lightgreen;
 }
 
 /* Separator */
@@ -34,7 +33,6 @@
     font-weight: 300;
     font-size: clamp(1.7vh, 1.2vw, 2.1vh);
     letter-spacing: 0.12vh;
-    background-color: lightblue;
 }
 
 /* Content */
