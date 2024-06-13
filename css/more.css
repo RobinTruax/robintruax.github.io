@@ -20,12 +20,6 @@
     column-gap: 1vw;
 }
 
-/* Internal */
-#more > .internal > .text > .content {
-    bottom: 50%;
-    transform: translateY(50%);
-}
-
 #main3 {
     padding-bottom: 3vh;
 }
@@ -92,16 +86,12 @@
     }
 
     #more > .internal > .vertseparator {
-        height: 2.5%;
-    }
-
-    #more > .internal > .separator {
-        height: 2.5%;
+        height: 7.5%;
     }
 
     #more > .internal > .text {
         width: 100%;
-        height: 45%;
+        height: 55%;
         bottom: 0;
     }
 

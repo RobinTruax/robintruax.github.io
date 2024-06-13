@@ -39,11 +39,11 @@
 
     #intro > .internal > .image {
         width: 100%;
-        height: 65%;
+        flex-grow: 1;
     }
 
     #intro > .internal > .text {
         width: 100%;
-        height: 35%;
-    } 
+        height: 50%;
+    }
 }

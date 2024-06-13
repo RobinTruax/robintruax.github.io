@@ -16,6 +16,7 @@
 .image {
     height: 100%;
     position: relative;
+    /* background-color: lightgreen; */
 }
 
 /* Separator */
@@ -33,6 +34,7 @@
     font-weight: 300;
     font-size: clamp(1.8vh, 1.2vw, 2.1vh);
     letter-spacing: 0.12vh;
+    /* background-color: lightblue; */
 }
 
 /* Content */
@@ -54,6 +56,6 @@ b {
 
     .separator {
         width: 100%;
-        height: 2.5%;
+        height: 0%;
     }
 }
