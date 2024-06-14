@@ -1,0 +1,56 @@
+/* Entry */
+.entry {
+    font-weight: 300;
+}
+
+/* Grid Layout For Two */
+.two {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 6fr 1fr 1fr;
+    grid-template-areas: 
+        "text" "button1" "button2";
+    row-gap: 10px;
+}
+
+/* Grid Layout for One */
+.one {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 6fr 2fr;
+    grid-template-areas: 
+        "text" "button1" "button2";
+    row-gap: 10px;
+}
+
+/* Grid Area Labelling */
+.text {
+    grid-area: text;
+}
+
+/* Mobile */
+@media only screen and (max-width: 125vh) {
+    /* Mobile Grid Layout for Two */
+    .two {
+        display: grid;
+        grid-template-rows: 1fr 5vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "text text"
+            "button1 button2";
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
+    /* Mobile Grid Layout for One */
+    .one {
+        display: grid;
+        grid-template-rows: 1fr 5vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "text text"
+            "button button";
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+}

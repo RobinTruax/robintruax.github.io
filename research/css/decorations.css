@@ -1,0 +1,47 @@
+/* Remove Default Scrollbar */
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Back Container */
+#backwrapper {
+    width: 100%;
+    padding-top: 8vh;
+    position: relative;
+    height: 8vh;
+}
+
+/* Back Button */
+#back {
+    /* Layout */
+    width: 8vh;
+    height: 8vh;
+
+    /* Style */
+    border: 2px solid black;
+    border-radius: 4vh;
+
+    /* Position */
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translateX(-50%) translateY(-50%);
+
+    /* Transition */
+    transition: all ease-out 0.3s;
+}
+
+/* Back Button Hover */
+#back:hover {
+    /* Layout */
+    width: 7.2vh;
+    height: 7.2vh;
+
+    /* Style */
+    color: red;
+    border: 2px solid red;
+}

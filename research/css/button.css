@@ -1,24 +1,13 @@
-/* Grid of Projects */
-#more > .internal > .image {
-    /* Grid */
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1vw;
-    column-gap: 1vw;
-}
-
-/* Project */
-.project {
-    /* Fonts */
+/* Button */
+.button {
+    /* Font */
     font-family: 'Assistant';
-    font-weight: 300;
-    font-size: clamp(2.1vh, 1.2vw, 2.1vh);
-    letter-spacing: 0.08vw;
+    font-weight: 500;
+    letter-spacing: 0.05vw;
     color: #666;
 
-    /* Transition */
-    transition: all ease-in-out 0.4s;
+    /* Font */
+    margin-left: 10px;
 
     /* User Select */
     -webkit-user-select: none;
@@ -28,20 +17,16 @@
     -o-user-select: none;
     user-select: none;
 
+    /* Layout */
     display: flex;
 }
 
-/* Project Internals */
-.projint {
+.buttonint {
     /* Layout */
     width: 100%;
     height: 100%;
     margin: auto auto;
-
-    /* Border */
-    border: 1px solid lightgrey;
-    border-radius: 8px;
-
+    
     /* Centered Text */
     text-align: center;
     display: flex;
@@ -49,21 +34,26 @@
     align-content: center;
     flex-direction: column;
 
+    /* Border */
+    border: 1px solid lightgrey;
+    border-radius: 1.5vh;
+
     /* Transition */
     transition: all ease-in-out 0.25s;
 }
 
-/* Project Hover */
-.project:hover > .projint {
+/* Hover */
+.button:hover > .buttonint {
     color: #000;
     border: 1px solid black;
     cursor: pointer;
-    width: 95.5%;
-    height: 95.5%;
+    width: 95%;
+    height: 95%;
 }
 
+/* Button Adjustments */
 @media only screen and (max-width: 125vh) {
-    #more > .internal > .image {
-        margin-bottom: 3vh;
+    .button {
+        margin-left: 0px;
     }
 }
