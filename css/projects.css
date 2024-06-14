@@ -1,0 +1,69 @@
+/* Grid of Projects */
+#more > .internal > .image {
+    /* Grid */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1vw;
+    column-gap: 1vw;
+}
+
+/* Project */
+.project {
+    /* Fonts */
+    font-family: 'Assistant';
+    font-weight: 300;
+    font-size: clamp(2.1vh, 1.2vw, 2.1vh);
+    letter-spacing: 0.08vw;
+    color: #666;
+
+    /* Transition */
+    transition: all ease-in-out 0.4s;
+
+    /* User Select */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    display: flex;
+}
+
+/* Project Internals */
+.projint {
+    /* Layout */
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+
+    /* Border */
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+
+    /* Centered Text */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    /* Transition */
+    transition: all ease-in-out 0.3s;
+}
+
+/* Project Hover */
+.project:hover > .projint {
+    color: #000;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 95.5%;
+    height: 95.5%;
+}
+
+@media only screen and (max-width: 125vh) {
+    #more > .internal > .image {
+        margin-bottom: 3vh;
+    }
+}

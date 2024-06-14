@@ -10,3 +10,7 @@ body {
     width: 100%;
     overflow: hidden;
 }
+
+b {
+    font-weight: 500;
+}
