@@ -7,7 +7,7 @@ body {
     padding-top: 10vh;
 
     /* Animation */
-    animation: fadeInAnimation ease-in 2s;
+    animation: fadeInAnimation ease-in 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;  
 
