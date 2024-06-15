@@ -1,6 +1,6 @@
 /* Tags */
 .tags {
-    margin-top: 0.3vh;
+    margin-top: 0.4vh;
     margin-bottom: 0.6vh;
 }
 
@@ -8,7 +8,7 @@
     color: #fafafa;
     font-family: 'Assistant';
     margin-right: 0.1vw;
-    padding: 0.04vh 0.8vw;
+    padding: 0.1vh 1.0vh;
     border-radius: 1000px; 
     font-size: 1.6vh;
 
