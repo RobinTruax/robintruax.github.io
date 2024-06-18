@@ -4,6 +4,7 @@
     font-family: 'Assistant';
     font-weight: 500;
     letter-spacing: 0.05vw;
+    font-size: clamp(1.85vh, 1.15vw, 2.15vh);
     color: #666;
 
     /* Font */
@@ -55,5 +56,6 @@
 @media only screen and (max-width: 125vh) {
     .button {
         margin-left: 0px;
+        height: 65%;
     }
 }

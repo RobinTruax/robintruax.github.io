@@ -1,16 +1,16 @@
 /* Tags */
 .tags {
-    margin-top: 0.4vh;
-    margin-bottom: 0.6vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
 }
 
 .tag {
     color: #fafafa;
     font-family: 'Assistant';
-    margin-right: 0.1vw;
-    padding: 0.1vh 1.0vh;
+    margin-right: 0.2vw;
+    padding: 0.1vh 1.5vh;
     border-radius: 1000px; 
-    font-size: 1.6vh;
+    font-size: clamp(1.5vh, 1.1vw, 1.65vh);
 
     -webkit-user-select: none;
     -khtml-user-select: none;

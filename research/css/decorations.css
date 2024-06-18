@@ -18,8 +18,8 @@ body {
 /* Back Button */
 #back {
     /* Layout */
-    width: 8vh;
-    height: 8vh;
+    width: clamp(6vh, 4.4vw, 7.2vh);
+    height: clamp(6vh, 4.4vw, 7.2vh);
 
     /* Style */
     border: 2px solid black;
@@ -38,8 +38,8 @@ body {
 /* Back Button Hover */
 #back:hover {
     /* Layout */
-    width: 7.2vh;
-    height: 7.2vh;
+    width: clamp(5.5vh, 4.0vw, 6.6vh);
+    height: clamp(5.5vh, 4.0vw, 6.6vh);
 
     /* Style */
     color: red;

@@ -33,7 +33,7 @@
     /* Mobile Grid Layout for Two */
     .two {
         display: grid;
-        grid-template-rows: 1fr 5vh;
+        grid-template-rows: 1fr 6vh;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             "text text"
@@ -45,7 +45,7 @@
     /* Mobile Grid Layout for One */
     .one {
         display: grid;
-        grid-template-rows: 1fr 5vh;
+        grid-template-rows: 1fr 6vh;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "text text"
