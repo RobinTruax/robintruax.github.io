@@ -15,10 +15,6 @@ body {
     font-family: 'Assistant';
 }
 
-b {
-    font-weight: 500;
-}
-
 /* Fade In Animation */
 @keyframes fadeInAnimation {
     0% {
@@ -46,9 +42,4 @@ h3 {
 /* Math */
 .katex { 
     font-size: 1em !important; 
-}
-
-/* Selections */
-::selection {
-    background: #00000022;
 }

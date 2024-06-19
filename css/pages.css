@@ -87,4 +87,8 @@
     .text {
         width: 100%;
     }
+
+    .vertsep {
+        height: 7%;
+    }
 }

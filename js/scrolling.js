@@ -17,3 +17,11 @@ if(!isMobile){
         scrollbar.style.height = (window.innerHeight*window.innerHeight/book.scrollHeight).toString() + "px";
     });
 }
+
+// book.onscroll = function myFunction() {  
+//     var scrolltotop = book.scrollTop;
+//     var xvalue = "left";
+//     var factor = -0.5;
+//     var yvalue = scrolltotop * factor;
+//     book.style.backgroundPosition = xvalue + " " + yvalue + "px";
+// }

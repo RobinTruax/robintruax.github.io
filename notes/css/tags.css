@@ -1,0 +1,81 @@
+/* Tags */
+.tags {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.tag {
+    color: #fafafa;
+    font-family: 'Assistant';
+    margin-right: 0.2vw;
+    padding: 0.1vh 1.5vh;
+    border-radius: 1000px; 
+    font-size: clamp(1.5vh, 1.1vw, 1.65vh);
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.color1 {
+    background-color: #264653;
+}
+
+.color2 {
+    background-color: #2a9d8f;
+}
+
+.color3 {
+    background-color: #d9b762;
+}
+
+.color4 {
+    background-color: #f4a261;
+}
+
+.color5 {
+    background-color: #e76f51;
+}
+
+/* .color1 {
+    background-color: #212529;
+}
+
+.color2 {
+    background-color: #343a40;
+}
+
+.color3 {
+    background-color: #495057;
+}
+
+.color4 {
+    background-color: #6c757d;
+}
+
+.color5 {
+    background-color: #adb5bd;
+} */
+
+/* .color1 {
+    background-color: #ef476f;
+}
+
+.color2 {
+    background-color: #ffd166;
+}
+
+.color3 {
+    background-color: #06d6a0;
+}
+
+.color4 {
+    background-color: #118ab2;
+}
+
+.color5 {
+    background-color: #073b4c;
+} */

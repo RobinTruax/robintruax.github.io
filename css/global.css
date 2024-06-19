@@ -15,6 +15,7 @@ body {
     animation: fadeInAnimation ease-in 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;  
+    background-color: #F2F3F4;
 }
 
 
@@ -30,4 +31,9 @@ body {
 
 b {
     font-weight: 500;
+}
+
+/* Selections */
+::selection {
+    background: #ff000022;
 }
