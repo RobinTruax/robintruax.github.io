@@ -45,6 +45,7 @@
 #personal > .internal > .image {
     width: 30%;
     padding-bottom: 7vh;
+    border: 1px solid black;
 }
 
 #personal > .internal > .buffer {
@@ -60,7 +61,7 @@
 
 /* Photo */
 .photo { 
-    width: 100%;
+    width: 50%;
     border-radius: 40px;
     max-height: 50vh;
     max-width: 50vh;
