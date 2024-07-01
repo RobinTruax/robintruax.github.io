@@ -9,17 +9,62 @@
 
 /* Image */
 .image {
-    width: 50%;
+    width: 40%;
     padding-bottom: 0vw;
     padding-right: 2vw;
 }
 
+.buffer {
+    width: 5%;
+}
+
+/* Intro */
+#intro > .internal > .image {
+    padding-bottom: 7vh;
+}
+
+/* Interests */
+#interests > .internal {
+    padding-top: 1vh;
+}
+
 #interests > .internal > .image {
     width: 30%;
+    padding-bottom: 4vh;
 }
 
 #interests > .internal > .buffer {
     width: 10%;
+}
+
+/* Personal */
+#personal > .internal {
+    padding-top: 1vh;
+}
+
+#personal > .internal > .image {
+    width: 30%;
+    padding-bottom: 7vh;
+}
+
+#personal > .internal > .buffer {
+    width: 10%;
+}
+
+/* More */
+#more > .internal {
+    height: 27vh;
+    padding-top: 0vh;
+    margin: auto 15%;
+}
+
+/* Photo */
+.photo { 
+    width: 100%;
+    border-radius: 40px;
+    max-height: 50vh;
+    max-width: 50vh;
+    align-self: center;
 }
 
 /* Text */
@@ -46,7 +91,7 @@
 .footnote {
     /* Layout */
     width: 100%;
-    margin-top: 3vh;
+    margin-top: 1.75vh;
     padding-top: 1vh;
     padding-bottom: 1.5vh;
 
@@ -59,6 +104,7 @@
 }
 
 @media only screen and (max-width: 125vh) {
+    /* Internal */
     .internal {
         padding: 12% 10%;
         margin: 0;
@@ -66,6 +112,13 @@
         flex-direction: column;
     }
 
+    #more > .internal {
+        height: 75vh;
+        margin: auto 14%;
+        padding: 0;
+    }
+
+    /* Image */
     .image {
         width: 100%;
         flex-grow: 1; 
@@ -84,11 +137,22 @@
         bottom: 5%;
     }
 
+    #personal > .internal > .image {
+        align-self: center;
+        width: 90%;
+        margin-bottom: 3vh;
+        position: relative;
+    }
+
+    /* Other */
     .text {
         width: 100%;
     }
 
-    .vertsep {
-        height: 7%;
+    .photo {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0%;
     }
 }

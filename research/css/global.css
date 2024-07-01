@@ -13,6 +13,7 @@ body {
 
     /* Font */
     font-family: 'Assistant';
+    background-color: #f2f3f4;
 }
 
 b {
@@ -32,11 +33,14 @@ b {
 /* Colors */
 h1 {
     color: red;
+    margin-bottom: 5vh;
+    /* font-weight: 600; */
 }
 
 /* Header Spacing */
 h3 {
     margin-bottom: 0vh;
+    /* font-weight: 600; */
 }
 
 .text {
@@ -46,6 +50,16 @@ h3 {
 /* Math */
 .katex { 
     font-size: 1em !important; 
+}
+
+.expander {
+    font-size: clamp(1.5vh, 1.1vw, 1.8vh);
+}
+
+@media only screen and (max-width: 125vh) {
+    .expander {
+        font-size: 0;
+    }
 }
 
 /* Selections */

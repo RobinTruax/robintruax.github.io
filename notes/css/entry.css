@@ -7,21 +7,34 @@
 .two {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 6fr 1fr 1fr;
+    grid-template-columns: 14fr 3fr 3fr;
     grid-template-areas: 
         "text" "button1" "button2";
     row-gap: 10px;
+    column-gap: 0.5vw;
 }
 
 /* Grid Layout for One */
 .one {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 6fr 2fr;
+    grid-template-columns: 15.5fr 4.5fr;
     grid-template-areas: 
         "text" "button1" "button2";
     row-gap: 10px;
+    column-gap: 0.5vw;
 }
+
+/* Grid Layout For Two Vertically */
+/* .two {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 10fr 3fr;
+    grid-template-areas: 
+            "text button1"
+            "text button2";
+    row-gap: 0.2vw;
+} */
 
 /* Grid Area Labelling */
 .text {
@@ -39,7 +52,7 @@
             "text text"
             "button1 button2";
         row-gap: 10px;
-        column-gap: 10px;
+        column-gap: 0.5vw;
     }
     
     /* Mobile Grid Layout for One */
@@ -51,6 +64,6 @@
             "text text"
             "button button";
         row-gap: 10px;
-        column-gap: 10px;
+        column-gap: 0.5vw;
     }
 }

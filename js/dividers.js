@@ -1,5 +1,6 @@
 // Contrast
 book = document.querySelector(".book");
+intro = document.querySelector("#intro");
 d1 = document.querySelector("#d1");
 d2 = document.querySelector("#d2");
 
@@ -30,12 +31,18 @@ function polyprogress(p, b, e){
     return `polygon(0% ${bez+offset}%, 0% ${bez+offset+height}%, 100% ${bez+height}%, 100% ${bez}%)`;
 }
 
+function blurprogress(p, b, e){
+    prog = progress(p);
+    bez = bezier(prog, b, 0, 0, e);
+}
+
 // Initialize
 d1.style.clipPath = polyprogress(0, 110, -110);
 d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -105);
 
 // Animation
 book.addEventListener("scroll", () => {
+    offset = 12.5*window.innerWidth/window.innerHeight;
     // Progress
     d1.style.clipPath = polyprogress(0, 110, -110);
     d2.style.clipPath = polyprogress(0.3*window.innerHeight, 115, -105);

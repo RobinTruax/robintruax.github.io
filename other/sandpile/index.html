@@ -1,0 +1,236 @@
+<!-- Home Page -->
+<!DOCTYPE html>
+
+<!-- Header -->
+<html lang="en">
+<head>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Truax</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&display=swap">
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/ascetic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/julia.min.js"></script>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<!-- Body -->
+<body>
+    <h1>Identities of Sandpile Groups</h1>
+        <h3>Description</h3>
+        <p>
+            This section displays the identity element of various sandpile groups. Each raster image of size \(n\) by \(n\) was considered as a graph by allowing each pixel to be a node and designating one “off-the-image” node. Then, each pixel has four edges to its adjacent pixels – if a pixel is on the boundary, then it has an edge (or two edges, for corner pixels) to the “off-the-image” node to ensure it genuinely has \(4\) edges. 
+        </p>
+        <p><i>
+            Due to the computational complexity of this project, it was done in Julia.
+        </i></p>
+        <h4>Legend</h4>
+        <ul>
+            <li>Color Scheme 1: Blue (0 grains of sand), Light Blue (1 grain of sand), Yellow (2 grains of sand), Maroon (3 grains of sand).</li>
+            <li>Color Scheme 2: Neon Blue (0 grains of sand), Medium Blue (1 grain of sand), Dark Blue (2 grains of sand), Midnight Blue (3 grains of sand).</li>
+            <li>Color Scheme 3: Neon Pink (0 grains of sand), Light Purple (1 grain of sand), Dark Purple (2 grains of sand), Midnight Blue (3 grains of sand).</li>
+        </ul>
+        <div style="height: 0.5em;"></div>
+        <h3>Images</h3>
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_10_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_10_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_10_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_25_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_25_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_25_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_50_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_50_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_50_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_100_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_100_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_100_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_200_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_200_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_200_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_500_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_500_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_500_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_1000_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_1000_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_1000_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div class="trio">
+            <div class="image">
+                <img src="src/id_2000_c1.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_2000_c2.png" class="photo" alt="Photo">
+            </div>
+            <div class="image">
+                <img src="src/id_2000_c3.png" class="photo" alt="Photo">
+            </div>
+        </div>
+
+        <div style="height: 0.75em;"></div>
+        <h3>Code</h3>
+        <p>The code is written in Julia.</p>
+        <div class="full">
+<pre><code class="language-julia">using Images
+
+# Constants
+const COLORS = [[(0.0000, 0.0353, 0.5098), (0.2941, 0.8314, 1.0000), (0.9882, 0.8941, 0.0000), (0.4745, 0.0157, 0.0000)],
+                [(0.1686, 0.9059, 0.9882), (0.1451, 0.4980, 0.9608), (0.1176, 0.0392, 0.6314), (0.0471, 0.0078, 0.3020)],
+                [(0.9804, 0.0863, 0.9373), (0.7490, 0.0941, 0.9490), (0.2824, 0.0314, 0.6314), (0.0471, 0.0078, 0.3020)]]
+const board_sizes     = [50]
+const pixels_per_node = [2]
+
+# Stabilizer
+function stab(board)
+    height, width = size(board)
+    is_stable = false
+    while !is_stable
+        is_stable = true
+        for j in 2:width-1
+            for i in 2:height-1
+                if board[i,j] >= 4
+                    is_stable = false
+                    board[i,j] -= 4
+                    board[i+1,j] += 1
+                    board[i-1,j] += 1
+                    board[i,j+1] += 1
+                    board[i,j-1] += 1
+                end
+            end
+        end
+    end
+    board
+end
+
+# Returns the identity board with 1 extra row/column on each side to handle boundary cases
+function board_identity(height, width)
+    identity = stab(fill(6, height+2, width+2) - stab(fill(6, height+2, width+2)))
+end
+
+# Takes board and image parameters, generates image
+function generate_image(board::Array, pixels_per_node, color_scheme, color_label)
+    graph_width, graph_height = size(board)[1]-2, size(board)[2]-2
+    image_width = graph_width*pixels_per_node
+    image_height = graph_height*pixels_per_node
+
+    IMAGE = fill(RGB(0.0,0.0,0.0), (image_width, image_height))
+    for i in 1:image_width
+        for j in 1:image_height
+            value_at_pixel = board[cld(i,pixels_per_node)+1,cld(j,pixels_per_node)+1]+1
+            color = color_scheme[value_at_pixel]
+            IMAGE[i,j] = RGB(color[1], color[2], color[3])
+        end
+    end
+    save(string("Images/id_", graph_width, "_x", pixels_per_node, "_color_", color_label, ".png"), IMAGE)
+end
+
+# Finds all the final boards
+results = []
+for s in board_sizes
+    print("Stabilizing board of size ", s, "...")
+    @time push!(results, board_identity(s, s))
+end
+
+# Creates images for all the final boards
+for r in eachindex(results)
+    print("Generating images of size ", size(results[r])[1]-2, " by ", size(results[r])[2]-2, "...")
+    for c in eachindex(COLORS)
+        @time generate_image(results[r], pixels_per_node[r], COLORS[c], c)
+    end
+end
+
+print("All tasks complete.")
+</code></pre>
+        </div>
+        <div class="button" onclick="location.href='src/sandpile.jl'">
+            <div class="buttonint" style="font-size: smaller;">
+                DOWNLOAD
+            </div>
+        </div>
+        <div id="backwrapper">
+            <div id="back" onclick="location.href='../'">
+            </div>
+        </div>
+        <script>hljs.highlightAll();</script>
+</body>
+</html>

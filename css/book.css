@@ -11,11 +11,6 @@
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-
-    /* background-image:
-      repeating-linear-gradient(#fafafa 0 1px, transparent 1px 100%),
-      repeating-linear-gradient(90deg, #fafafa 0 1px, transparent 1px 100%);
-    background-size: 1vw 1vw; */
 }
 
 /* Page */
