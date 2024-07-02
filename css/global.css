@@ -38,3 +38,28 @@ b {
 ::selection {
     background: #ff000022;
 }
+
+.social {
+    display: flex;
+    gap: 2px;
+}
+
+.indiv {
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social > .indiv > object {
+    height: 4vh;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+}
+
+.social > .indiv:hover > object {
+    /* width: 2.5vh; */
+}
