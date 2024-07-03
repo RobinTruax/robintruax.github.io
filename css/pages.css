@@ -108,6 +108,7 @@
     /* Internal */
     .internal {
         padding: 12% 10%;
+        padding-bottom: 5%;
         margin: 0;
         height: 100%;
         flex-direction: column;
@@ -138,7 +139,12 @@
         bottom: 5%;
     }
 
+    .internal {
+        background-color: lightcoral;
+    }
+
     #personal > .internal > .image {
+        background-color: lightblue;
         align-self: center;
         width: 90%;
         margin-bottom: 3vh;
