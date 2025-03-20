@@ -76,7 +76,7 @@
     /* Font */
     font-family: 'Assistant';
     font-weight: 300;
-    font-size: clamp(1.8vh, 1.2vw, 2.1vh);
+    font-size: clamp(1.8vh, 1.1vw, 2.1vh);
     letter-spacing: 0.12vh;
 
     align-self: flex-end;
