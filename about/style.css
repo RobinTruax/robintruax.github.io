@@ -1,0 +1,9 @@
+.main {
+    grid-template-columns: 2fr 3fr;
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}

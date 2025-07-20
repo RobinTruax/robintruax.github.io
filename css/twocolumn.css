@@ -1,0 +1,50 @@
+.main {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    gap: 1rem;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.7rem;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.7rem;
+}
+
+.footnote {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    border-top: black solid 1px;
+    padding-top: 1rem;
+    font-size: 0.7rem;
+    letter-spacing: -0.02rem;
+}
+
+b > a {
+    text-decoration: none;
+}
+
+b > a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    /* .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr;
+        gap: 0.7rem;
+    } */
+    /* .footnote {
+        margin-top: 0.3rem;
+        grid-column-end: span 1;
+        font-size: 0.6rem;
+    } */
+}

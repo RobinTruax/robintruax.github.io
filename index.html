@@ -1,184 +1,61 @@
-<!-- Home Page -->
 <!DOCTYPE html>
-
-<!-- Header -->
 <html lang="en">
 <head>
-    <!-- Metadata -->
+    <!-- Basic -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi. I'm Robin, a Clarendon Scholar in philosophy at the University of Oxford. For the last four years, I studied political science, philosophy (BA), mathematics (BS), and computer science (MS) at Stanford University and did research at Brown, Northwestern, and Stanford.">
-    <title>Robin Truax</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/image.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/global.css">   
-    <link rel="stylesheet" href="css/book.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <link rel="stylesheet" href="css/dividers.css">
-    <link rel="stylesheet" href="css/pages.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <!-- Icon and Title -->
+    <link rel="icon" type="image/x-icon" href="/src/circle.ico">
+    <title>index</title>
 </head>
-
-<!-- Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0V327655ZY"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-0V327655ZY');
-</script>
-
 <body>
-    <!-- Main -->
-    <article class="book">
-        <section class="page" id="intro">
-            <div class="internal">
-                <div class="buffer">
-                </div>
-                <div class="image">
-                    <object type="image/svg+xml" data="images/about1.svg">
-                        Image
-                    </object>
-                </div>
-                <div class="text">
-                    Hi. I'm <span style="color: red;"><b>Robin</b></span>,¹ a student in <b>philosophy</b> at <b>the University of Oxford</b>.
-                    For the last four years, I studied political science, philosophy <span style="font-size: smaller;">(BA)</span>, mathematics <span style="font-size: smaller;">(BS)</span>, and computer science <span style="font-size: smaller;">(MS)</span> at Stanford University and did research at Brown, Northwestern, and Stanford.²
-                    After Oxford, I begin a <span style="font-size: smaller;">PhD</span> in philosophy at the University of California, Berkeley. 
-                    <div style="height: 0.75em;"></div>
-                    I'm interested in <b>epistemology</b> and <b>feminist & political philosophy</b>.
-                    <div class="footnote">
-                        &emsp;¹ she/they
-                        <br>
-                        <div onclick="location.href='/src/cv.pdf';" style="cursor: pointer;">&emsp;² see my <i>curriculum vitae</i> for more</div>
-                    </div>
-                </div>
+    <div class="total">
+        <!-- Navigation -->
+        <div class="nav">
+            <a href="/about">about</a>
+            <a href="/philosophy">philosophy</a>
+            <a href="/writing">writing</a>
+            <a href="/other">other</a>
+        </div>
+        <div class="main">
+            <!-- Image -->
+            <div class="image">
+                <object type="image/svg+xml" data="src/index0.svg">
+                    Image
+                </object>
             </div>
-        </section>
-
-        <section class="page" id="interests">
-            <div class="internal">
-                <div class="buffer">
-                </div>
-                <div class="image">
-                    <object type="image/svg+xml" data="images/about3s.svg">
-                        Image
-                    </object>
-                </div>
-                <div class="text">
-                    My primary research interest is <span style="color: red;"><b>epistemology</b></span>.³ I am interested in a number of questions in <b>social epistemology</b> and <b>metaepistemology</b>. These include questions about hermeneutical injustices of dilution and monumentalization, the possibility of collective zetetic norms and inquisitive reasons, and, most recently, how moral encroachment can be used to make sense of intuitions regarding sexual consent without engendering agential demotion. 
-                    <div style="height: 0.75em;"></div>
-                    I am also interested in questions about <b>sexuality</b> and <b>gender</b> as they arise in <b>feminist and political philosophy</b>. These identities and experiences are at once irreducibly individual and deeply entangled with political conditions. I am writing a book on this paradox, on making sense of trans womanhood and trans lesbians in a world profoundly hostile to both. 
-                    <div class="footnote">
-                        &emsp;³ the philosophical study of knowledge, evidence, and justified belief
-                    </div>
-                </div>
-                <div class="buffer">
-                </div>
+            <!-- Text -->
+            <div class="text">
+                <p>
+                    lal salam. i'm roshni¹ junia thangavelu truax.²
+                </p>
+                <p>
+                    i'm a phd student in philosophy at cal. my interests are in [trans]feminist epistemology, metaphysics, and ethics—in less technical terms, the past, present, and future of gender and sex. i have studied philosophy, computer science, mathematics, and political science at stanford and oxford. <span class="cursor">█</span>
+                </p>
             </div>
-        </section>
-        
-        <section class="page" id="personal">
-            <div class="internal">
-                <div class="buffer">
-                    
-                </div>
-                <div class="image">
-                    <img src="images/photo.png" class="photo" alt="Photo">
-                </div>
-                <div class="text">
-                    I have secondary interests in a diverse range of fields, including ethics, metaethics, combinatorics, graph theory, classical & quantum complexity theory, and social choice theory. 
-                    I've researched these topics at <b>Stanford</b>, <b>Brown</b>,⁴ and <b>Northwestern</b>, publishing in <i>Discrete Mathematics</i> and <i>Involve</i>.⁵
-                    <div style="height: 0.75em;"></div>
-                    I am from Seattle. In my own time, I enjoy trans literature, tango, post-punk music, speculative fiction, film photography, and a dozen other things. Contact me at 
-                    <span style="color: red;"><b>r<span style="font-size: smaller;"> [at] </span>truax<span style="font-size: smaller;"> [dot] </span>io</b></span>, <span style="color: red;"><b>truax<span style="font-size: smaller;"> [at] </span>berkeley<span style="font-size: smaller;"> [dot] </span>edu</b></span>, <span style="color: red;"><b>robin.truax<span style="font-size: smaller;"> [at] </span>philosophy<span style="font-size: smaller;"> [dot] </span>ox.ac.uk</b></span>, or 
-                    <span style="color: red;"><b>truax<span style="font-size: smaller;"> [at] </span> cs <span style="font-size: smaller;"> [dot] </span> stanford<span style="font-size: smaller;"> [dot] </span>edu</b></span> as a function of which is most relevant to your query.
-                    <div style="height: 0.75em;"></div>
-                    <!-- <div class="social">
-                        <div class="indiv">
-                            <object type="image/svg+xml" data="src/instagram.svg">
-                                Instagram
-                            </object>
-                        </div>
-                        <div class="indiv">
-                            <object type="image/svg+xml" data="src/youtube.svg">
-                                YouTube
-                            </object>
-                        </div>
-                        <div class="indiv">
-                            <object type="image/svg+xml" data="src/orcid.svg">
-                                ORCiD
-                            </object>
-                        </div>
-                        <div class="indiv">
-                            <object type="image/svg+xml" data="src/google-scholar.svg">
-                                Google Scholar
-                            </object>
-                        </div>
-                        <div class="indiv">
-                            <object type="image/svg+xml" data="src/github.svg">
-                                GitHub
-                            </object>
-                        </div>
-                        <div class="indiv">
-                            <object type="image/svg+xml" data="src/email.svg">
-                                Email
-                            </object>
-                        </div>
-                    </div> -->
-                    <div class="footnote">
-                        &emsp;⁴ The Institute for Computational and Experimental Research in Mathematics
-                        <br>
-                        <div onclick="location.href='/src/cv.pdf';" style="cursor: pointer;">&emsp;⁵ see my <i>curriculum vitae</i> for more</div>
-                    </div>
-                </div>
+            <!-- Spare -->
+            <div class="spare">
             </div>
-        </section>
-
-        <section class="page" id="more">
-            <div class="internal">
-                <div class="projects">
-                    <div class="project">
-                        <div class="projint" onclick="location.href='/research';">
-                            <b>RESEARCH</b>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="projint" onclick="location.href='/notes';">
-                            <b>NOTES</b>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="projint" onclick="location.href='/exposition';">
-                            <b>EXPOSITION</b>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="projint" onclick="location.href='/other';">
-                            <b>OTHER</b>
-                        </div>
-                    </div>
-                </div>
+            <!-- Footnote -->
+            <div class="footnote">
+                ¹ /ɾoːʃ.niː/ <br>
+                ² she/her/hers <br>
             </div>
-        </section>
-    </article>
-
-    <!-- Dividers -->
-    <div class="divider" id="d1"></div>
-    <div class="divider" id="d2"></div>
-
-    <!-- Scrollbar -->
-    <div id="scrollbar"></div>
-
-    <!-- JavaScript -->
-    <script src="js/resize.js"></script>
-    <script src="js/dividers.js"></script>
-    <script src="js/scrolling.js"></script>
+        </div>
+        <!-- Navigation -->
+        <div class="nav">
+            <span class="disabled" style="color: #F2F3F4;">back</span>
+        </div>
+    </div>
 </body>
 </html>
