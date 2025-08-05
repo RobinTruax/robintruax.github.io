@@ -11,6 +11,11 @@
     justify-content: end;
 }
 
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
 .text {
     display: flex;
     flex-direction: column;
