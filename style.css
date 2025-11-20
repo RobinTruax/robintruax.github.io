@@ -21,7 +21,7 @@
 }
 
 #main {
-    font-size: clamp(0.8rem, 1.6vw, 1rem);
+    font-size: clamp(0.7rem, 1.6vw, 1rem);
     letter-spacing: 0.02rem;
     font-weight: 300;
     width: 52rem;
@@ -31,7 +31,7 @@
 #footnote {
     border-top: black solid 1px;
     padding-top: 1rem;
-    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+    font-size: clamp(0.6rem, 1.3vw, 0.8rem);
     letter-spacing: 0.02rem;
 }
 
@@ -39,7 +39,7 @@
 #nav, #back {
     width: 52rem;
     max-width: 85vw;
-    font-size: clamp(0.8rem, 1.6vw, 1rem);
+    font-size: clamp(0.7rem, 1.6vw, 1rem);
     font-weight: 600;
     display: flex;
     justify-content: space-between;
