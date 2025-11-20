@@ -1,0 +1,25 @@
+#main {
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4fr 1fr;
+    gap: 1rem;
+}
+
+#image {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: justify;
+    gap: 0.7rem;
+}

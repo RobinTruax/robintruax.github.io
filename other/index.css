@@ -1,0 +1,28 @@
+#main {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+#col1, #col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: justify;
+    gap: 0.7rem;
+}
+
+ul {
+    text-align: left;
+    letter-spacing: 0.02rem;
+}
+
+li a {
+    letter-spacing: 0.02rem;
+}
+
+#footnote {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}

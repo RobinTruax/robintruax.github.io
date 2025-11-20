@@ -1,9 +1,0 @@
-.main {
-    grid-template-rows: 3fr 1fr;
-}
-
-@media only screen and (max-width: 800px) {
-    .main {
-        grid-template-rows: 0fr 0fr 0fr;
-    }
-}

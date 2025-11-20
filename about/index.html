@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/about/</title>
 
     <!-- Style -->
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/image.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../cursor.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <!-- Icon and Title -->
-    <link rel="icon" type="image/x-icon" href="../src/circle.ico">
-    <title>about[0]</title>
 </head>
 <body>
-    <div class="total">
-        <!-- Navigation -->
-        <div class="nav">
-            <span class="disabled">prev</span>
-            <a href="./1/">next</a>
+    <div id="total">
+        <div id="nav">
+            <a class="disabled">about</a>
+            <a href="../philosophy">philosophy</a>
+            <a href="../writing">writing</a>
+            <a href="../other/0">other</a>
         </div>
-        <div class="main">
-            <!-- Image -->
-            <div class="image">
-                <img src="../src/about_new.png" alt="Self">
-            </div>
-            <!-- Text -->
-            <div class="text">
+        <div id="main">
+            <div id="col1">
                 <p>
-                    i've lived in a dozen places, but if i am <i>from</i> anywhere, it is seattle, and the moss / petrichor of olympic national park. i enjoy speculative fiction⁴, punk music⁵, queer & trans literature⁶, woodworking, anything related to my fiancée nicha, and a dozen other things. i am a tamil woman and a transsexual dyke; themes relating to these identities recur frequently in my writing. 
+                    I am broadly interested in understanding, through a materialist transfeminist lens, the futures—nihilistic, utopian, and everything in between—that we, as queer and trans people, imagine for ourselves. Where can these visions be found—speculative fiction, punk rock, anarchist zines—outside of academia's traditional mining grounds? What pressures are they formed under? How do these pressures make them vulnerable to recapture? And what, or rather <i>who</i>, do they leave out?
                 </p>
                 <p>
-                    you may contact me at <b>truax [at] berkeley [dot] edu</b> if your inquiry is related to my academic work and <b>r [at] truax [dot] io</b> otherwise. if you are trans, i am available as a resource for navigating academia, including looking over application essays, accessing papers, and reaching out on your behalf. <span class="cursor">█</span>
+                    Ursula K. Le Guin writes that science fiction is not an attempt at extrapolation but an extended thought experiment by the novelist: “[it] is not predictive; it is descriptive.”³ Yet sci-fi is not only about the here and now; a glimpse into the collective reimaginary, it is as much about what could be—in a future world, or a different one—as what is. This dialectic is essential to understanding how sci-fi can complement theory.
                 </p>
             </div>
-            <!-- Spare -->
-            <div class="spare">
+            <div id="col2">
+                <p>
+                    I have lived in more than a dozen places, but if I am <i>from</i> anywhere, it is Seattle, and the moss and petrichor of the Hoh Rainforest in Olympic National Park. I love speculative fiction,⁴ punk rock,⁵ queer and trans literature,⁶ woodworking, and anything even tangentially related to my fiancée, Nicha. I am Tamil, a butch lesbian, and a trans woman.
+                </p>
+                <p>
+                    As a mathematician, I worked in a number of areas, including combinatorics, graph theory, and quantum complexity theory. I conducted research at Stanford, Brown, and Northwestern, and published in <i>Discrete Mathematics</i>. I remain interested in the use of logic in formal and social epistemology.
+                </p>
+                <p>You are welcome to contact me at truax <span class="sc">[at]</span> berkeley <span class="sc">[dot]</span> edu, if your inquiry is related to my research, and r <span class="sc">[at]</span> truax <span class="sc">[dot]</span> io otherwise. <span id="cursor">|</span></p>
             </div>
-            <!-- Footnote -->
-            <div class="footnote">
-                ⁴ see <i>the left hand of darkness</i> by ursula k. le guin<br>
-                ⁵ see <i>g.l.o.s.s.</i> and <i>rvivr</i> <br>
-                ⁶ see <i>transgender marxism</i> and <i>feminism against cisness</i>
+            <div id="footnote">
+                ³ Le Guin, <i>The Left Hand of Darkness</i>, ii.<br>
+                ⁴ See <i>The Dispossessed</i> by Ursula K. Le Guin.<br>
+                ⁵ See the demo or album <i>Trans Day of Revenge</i> by Girls Living Outside Society's Shit.<br>
+                ⁶ See <i>Girlfriends</i> by Emily Zhou.
             </div>
         </div>
-        <div class="nav naveven">
+        <div id="back">
             <a href="../">back</a>
         </div>
     </div>
